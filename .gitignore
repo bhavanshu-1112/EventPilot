@@ -28,7 +28,8 @@ coverage/
 logs/
 
 # Uploads (runtime)
-uploads/
+/uploads/
+!apps/api/src/uploads/
 
 # Turbo
 .turbo/
