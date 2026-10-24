@@ -1,0 +1,54 @@
+{
+  "name": "eventpilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "GenAI-powered celebration and event planning assistant",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @eventpilot/api --filter @eventpilot/web dev",
+    "dev:api": "pnpm --filter @eventpilot/api dev",
+    "dev:web": "pnpm --filter @eventpilot/web dev",
+    "build": "pnpm -r build",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings 0",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md,yaml,yml}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,json,md,yaml,yml}\"",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "test:e2e": "pnpm --filter @eventpilot/web test:e2e",
+    "seed": "pnpm --filter @eventpilot/api seed",
+    "prepare": "husky"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/pdfkit": "^0.17.7",
+    "cross-env": "^10.1.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.0",
+    "pdfkit": "^0.20.2",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.10.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml}": [
+      "prettier --write"
+    ]
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}

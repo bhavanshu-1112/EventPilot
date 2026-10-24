@@ -1,0 +1,161 @@
+{
+  "_note": "SAMPLE SEED DATA: Complete milestone birthday celebration event seed.",
+  "event": {
+    "id": "evt-birthday-01",
+    "name": "Kabir's 40th Milestone Rooftop Soiree",
+    "eventType": "birthday",
+    "location": "Udaipur, Rajasthan",
+    "eventDate": "2026-10-15",
+    "guestCount": 85,
+    "totalBudgetMinor": 40000000,
+    "currency": "INR",
+    "brief": {
+      "celebrant": "Kabir Mathur",
+      "vision": "Sophisticated evening rooftop cocktail celebration overlooking Lake Pichola with bespoke molecular mixology, live acoustic lounge music, and nostalgic surprises.",
+      "tone": "Chic, lively, intimate, celebratory",
+      "preferredColorPalette": ["Midnight Blue", "Champagne Gold", "Slate Grey"]
+    },
+    "categories": [
+      {
+        "id": "venue",
+        "label": "Old City Rooftop Lounge",
+        "weight": 0.25,
+        "locked": true,
+        "floorPercent": 5,
+        "priority": 2,
+        "allocatedMinor": 10000000,
+        "spentMinor": 10000000
+      },
+      {
+        "id": "catering",
+        "label": "Live Wok, Grazing Table & Mixology",
+        "weight": 0.35,
+        "locked": false,
+        "floorPercent": 10,
+        "priority": 3,
+        "allocatedMinor": 14000000,
+        "spentMinor": 12500000
+      },
+      {
+        "id": "decor",
+        "label": "Neon Marquee, Fairy Canopy & Florals",
+        "weight": 0.15,
+        "locked": false,
+        "floorPercent": 3,
+        "priority": 5,
+        "allocatedMinor": 6000000,
+        "spentMinor": 5200000
+      },
+      {
+        "id": "entertainment",
+        "label": "Lounge DJ, Acoustic Duo & Emcee",
+        "weight": 0.12,
+        "locked": false,
+        "floorPercent": 3,
+        "priority": 4,
+        "allocatedMinor": 4800000,
+        "spentMinor": 4000000
+      },
+      {
+        "id": "photography",
+        "label": "Party Candid & 360 Video Booth",
+        "weight": 0.05,
+        "locked": false,
+        "floorPercent": 2,
+        "priority": 6,
+        "allocatedMinor": 2000000,
+        "spentMinor": 1800000
+      },
+      {
+        "id": "contingency",
+        "label": "Buffer & Contingency",
+        "weight": 0.08,
+        "locked": true,
+        "floorPercent": 5,
+        "priority": 1,
+        "allocatedMinor": 3200000,
+        "spentMinor": 0
+      }
+    ],
+    "timeline": [
+      {
+        "id": "item-guest-arrival",
+        "label": "Guest Welcome & Sundowner Cocktails",
+        "startMin": 0,
+        "durationMin": 60,
+        "fixed": false,
+        "dependsOn": [],
+        "bufferMin": 15,
+        "vendor": "Lakeside Rooftop Crew",
+        "guestVisible": true,
+        "priority": 2
+      },
+      {
+        "id": "item-acoustic-set",
+        "label": "Live Acoustic Sunset Set & Grazing Table",
+        "startMin": 75,
+        "durationMin": 60,
+        "fixed": false,
+        "dependsOn": ["item-guest-arrival"],
+        "bufferMin": 15,
+        "vendor": "Acoustic Duo",
+        "guestVisible": true,
+        "priority": 3
+      },
+      {
+        "id": "item-roast-video",
+        "label": "Surprise Nostalgia Video & Friends Roast",
+        "startMin": 150,
+        "durationMin": 30,
+        "fixed": true,
+        "dependsOn": ["item-acoustic-set"],
+        "bufferMin": 10,
+        "vendor": "AV Technician",
+        "guestVisible": true,
+        "priority": 1
+      },
+      {
+        "id": "item-cake-cutting",
+        "label": "Cake Cutting, Toast & Champagne Fountain",
+        "startMin": 190,
+        "durationMin": 25,
+        "fixed": false,
+        "dependsOn": ["item-roast-video"],
+        "bufferMin": 15,
+        "vendor": "Patisserie Chef",
+        "guestVisible": true,
+        "priority": 1
+      },
+      {
+        "id": "item-dj-party",
+        "label": "DJ Set, Live Food Wok Counters & Dancing",
+        "startMin": 230,
+        "durationMin": 120,
+        "fixed": false,
+        "dependsOn": ["item-cake-cutting"],
+        "bufferMin": 0,
+        "vendor": "Party DJ",
+        "guestVisible": true,
+        "priority": 2
+      }
+    ],
+    "contacts": [
+      {
+        "id": "cont-bday-01",
+        "name": "Kabir Mathur",
+        "role": "Birthday Host",
+        "phone": "+91 98111 22334",
+        "email": "kabir@example.com",
+        "preferredChannel": "whatsapp"
+      },
+      {
+        "id": "cont-bday-02",
+        "name": "Pooja Varma",
+        "role": "Party Planner & Stylist",
+        "phone": "+91 97233 44556",
+        "email": "pooja@partystudio.test",
+        "preferredChannel": "sms"
+      }
+    ]
+  }
+}

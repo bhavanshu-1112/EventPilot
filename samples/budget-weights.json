@@ -1,0 +1,183 @@
+{
+  "_note": "SAMPLE DATA: Configurable budget weight assumptions by event type. Surface as starting recommendations, fully customizable by user.",
+  "templates": {
+    "wedding": {
+      "name": "Indian Destination Wedding",
+      "defaultTotalMinor": 350000000,
+      "categories": [
+        {
+          "id": "venue",
+          "label": "Venue & Heritage Lawns",
+          "weight": 0.28,
+          "locked": false,
+          "floorPercent": 10,
+          "priority": 2
+        },
+        {
+          "id": "catering",
+          "label": "Catering & Multi-Cuisine Banquets",
+          "weight": 0.28,
+          "locked": false,
+          "floorPercent": 10,
+          "priority": 3
+        },
+        {
+          "id": "decor",
+          "label": "Theme Decor, Floral & Mandap",
+          "weight": 0.16,
+          "locked": false,
+          "floorPercent": 5,
+          "priority": 5
+        },
+        {
+          "id": "photography",
+          "label": "Cinematography & Candid Photo",
+          "weight": 0.08,
+          "locked": false,
+          "floorPercent": 3,
+          "priority": 4
+        },
+        {
+          "id": "attire",
+          "label": "Bridal & Groom Couture, Styling",
+          "weight": 0.06,
+          "locked": false,
+          "floorPercent": 2,
+          "priority": 6
+        },
+        {
+          "id": "entertainment",
+          "label": "Live Band, DJ & Choreography",
+          "weight": 0.05,
+          "locked": false,
+          "floorPercent": 2,
+          "priority": 7
+        },
+        {
+          "id": "logistics",
+          "label": "Airport Transfers & Guest Fleet",
+          "weight": 0.04,
+          "locked": false,
+          "floorPercent": 2,
+          "priority": 8
+        },
+        {
+          "id": "contingency",
+          "label": "Buffer & Contingency Reserve",
+          "weight": 0.05,
+          "locked": true,
+          "floorPercent": 5,
+          "priority": 1
+        }
+      ]
+    },
+    "birthday": {
+      "name": "Milestone Birthday Party",
+      "defaultTotalMinor": 40000000,
+      "categories": [
+        {
+          "id": "venue",
+          "label": "Boutique Hall / Rooftop Lounge",
+          "weight": 0.25,
+          "locked": false,
+          "floorPercent": 5,
+          "priority": 2
+        },
+        {
+          "id": "catering",
+          "label": "Live Counters & Custom Bar/Mocktails",
+          "weight": 0.35,
+          "locked": false,
+          "floorPercent": 10,
+          "priority": 3
+        },
+        {
+          "id": "decor",
+          "label": "Bespoke Backdrop & Balloon Art",
+          "weight": 0.15,
+          "locked": false,
+          "floorPercent": 3,
+          "priority": 5
+        },
+        {
+          "id": "entertainment",
+          "label": "DJ, Emcee & Interactive Games",
+          "weight": 0.12,
+          "locked": false,
+          "floorPercent": 3,
+          "priority": 4
+        },
+        {
+          "id": "photography",
+          "label": "Party Photographer & Instant Prints",
+          "weight": 0.05,
+          "locked": false,
+          "floorPercent": 2,
+          "priority": 6
+        },
+        {
+          "id": "contingency",
+          "label": "Buffer & Contingency",
+          "weight": 0.08,
+          "locked": true,
+          "floorPercent": 5,
+          "priority": 1
+        }
+      ]
+    },
+    "community": {
+      "name": "Community Cultural Festival / Gala",
+      "defaultTotalMinor": 80000000,
+      "categories": [
+        {
+          "id": "venue",
+          "label": "Grounds, Pavilions & City Permissions",
+          "weight": 0.22,
+          "locked": false,
+          "floorPercent": 5,
+          "priority": 2
+        },
+        {
+          "id": "catering",
+          "label": "Community Langar / Food Stalls",
+          "weight": 0.3,
+          "locked": false,
+          "floorPercent": 8,
+          "priority": 3
+        },
+        {
+          "id": "logistics",
+          "label": "AV, Generator, Sanitation & Volunteers",
+          "weight": 0.2,
+          "locked": false,
+          "floorPercent": 5,
+          "priority": 4
+        },
+        {
+          "id": "entertainment",
+          "label": "Cultural Troupes, PA System & Host",
+          "weight": 0.12,
+          "locked": false,
+          "floorPercent": 2,
+          "priority": 5
+        },
+        {
+          "id": "decor",
+          "label": "Signage, Entry Gates & Banners",
+          "weight": 0.06,
+          "locked": false,
+          "floorPercent": 2,
+          "priority": 6
+        },
+        {
+          "id": "contingency",
+          "label": "Emergency Reserve",
+          "weight": 0.1,
+          "locked": true,
+          "floorPercent": 5,
+          "priority": 1
+        }
+      ]
+    }
+  }
+}

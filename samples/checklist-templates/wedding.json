@@ -1,0 +1,127 @@
+{
+  "_note": "SAMPLE DATA: Pre-event checklist template for destination and multi-ceremony weddings with relative due dates.",
+  "eventType": "wedding",
+  "name": "Indian Destination Wedding Master Checklist",
+  "items": [
+    {
+      "id": "chk-wed-01",
+      "category": "venue",
+      "title": "Lock Venue & Book Guest Room Inventory",
+      "description": "Finalize venue contract, deposit payment schedule, and room blocking for out-of-town guests.",
+      "daysBeforeEvent": 180,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "planner"
+    },
+    {
+      "id": "chk-wed-02",
+      "category": "catering",
+      "title": "Catering Tasting & Menu Curation",
+      "description": "Taste test live chaat, regional Mewari specialties, international stations and clarify tax & service charge terms.",
+      "daysBeforeEvent": 120,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "couple"
+    },
+    {
+      "id": "chk-wed-03",
+      "category": "photography",
+      "title": "Book Cinematographer & Drone Operators",
+      "description": "Review portfolios, verify high-resolution equipment, drone permits over Lake Pichola, and same-day teaser delivery.",
+      "daysBeforeEvent": 120,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "couple"
+    },
+    {
+      "id": "chk-wed-04",
+      "category": "decor",
+      "title": "Mandap 3D Render Signoff & Floral Sourcing",
+      "description": "Approve mandap architectural render, seating layouts, and specify cold storage for exotic florals.",
+      "daysBeforeEvent": 90,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "planner"
+    },
+    {
+      "id": "chk-wed-05",
+      "category": "attire",
+      "title": "Bridal Lehenga & Groom Sherwani First Trials",
+      "description": "Complete fittings for all major functions (Mehendi, Sangeet, Pheras, Reception).",
+      "daysBeforeEvent": 60,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "couple"
+    },
+    {
+      "id": "chk-wed-06",
+      "category": "entertainment",
+      "title": "Lock Sangeet Track List & Choreographer Sessions",
+      "description": "Coordinate virtual rehearsal track cuts for family performances and finalize anchor script.",
+      "daysBeforeEvent": 45,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "couple"
+    },
+    {
+      "id": "chk-wed-07",
+      "category": "logistics",
+      "title": "Finalize Airport Shuttle Manifest & Fleet Allocations",
+      "description": "Match guest flight arrival times to Innova / bus departure slots from Maharana Pratap Airport.",
+      "daysBeforeEvent": 21,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "planner"
+    },
+    {
+      "id": "chk-wed-08",
+      "category": "logistics",
+      "title": "Sound & Pyrotechnic Local Police / City Permissions",
+      "description": "Secure sound decibel exemption permits for outdoor music past 10 PM and fireworks clearances.",
+      "daysBeforeEvent": 14,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "planner"
+    },
+    {
+      "id": "chk-wed-09",
+      "category": "catering",
+      "title": "Final Headcount Guarantee to Caterer",
+      "description": "Confirm locked guest count to avoid minimum pax penalties and adjust buffet buffer allowances.",
+      "daysBeforeEvent": 7,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "planner"
+    },
+    {
+      "id": "chk-wed-10",
+      "category": "logistics",
+      "title": "Hamper Delivery to Hotel Front Desks",
+      "description": "Assemble welcome luggage tags, itinerary booklets, local sweets, and emergency kit for guest rooms.",
+      "daysBeforeEvent": 2,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "planner"
+    },
+    {
+      "id": "chk-wed-11",
+      "category": "ceremony",
+      "title": "Mandap Puja Samagri & Pandit Coordination",
+      "description": "Hand over items list, ghee, havan wood, coconut, garlands and review ritual muhurat timings.",
+      "daysBeforeEvent": 1,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "family"
+    },
+    {
+      "id": "chk-wed-12",
+      "category": "logistics",
+      "title": "Live Day-of Vendor Arrival & Sound Check",
+      "description": "Check generator fuel levels, audio lines, mic battery packs, and green room hospitality.",
+      "daysBeforeEvent": 0,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "planner"
+    }
+  ]
+}

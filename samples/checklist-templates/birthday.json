@@ -1,0 +1,97 @@
+{
+  "_note": "SAMPLE DATA: Pre-event checklist template for milestone birthdays and private celebrations.",
+  "eventType": "birthday",
+  "name": "Milestone Birthday Party Checklist",
+  "items": [
+    {
+      "id": "chk-bday-01",
+      "category": "venue",
+      "title": "Select Venue or Private Rooftop Space",
+      "description": "Secure space reservation, confirm outside catering/alcohol policy and closing hours.",
+      "daysBeforeEvent": 45,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-02",
+      "category": "decor",
+      "title": "Theme Design & Color Palette Selection",
+      "description": "Decide theme (Retro Neon, Golden Gala, Tropical Boho) and order personalized neon or marquee signage.",
+      "daysBeforeEvent": 30,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-03",
+      "category": "catering",
+      "title": "Custom Designer Cake Tasting & Order",
+      "description": "Finalize flavor, tiered structure, sugar art design, and arrange refrigerated venue delivery time.",
+      "daysBeforeEvent": 20,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-04",
+      "category": "entertainment",
+      "title": "Book DJ / Acoustic Singer & Playlist Curation",
+      "description": "Share birthday celebrant's must-play nostalgic anthems and 'do-not-play' list.",
+      "daysBeforeEvent": 15,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-05",
+      "category": "invitations",
+      "title": "Send Digital Invites & Collect RSVPs",
+      "description": "Circulate animated invite video or link, track headcount and dietary allergies.",
+      "daysBeforeEvent": 14,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-06",
+      "category": "photography",
+      "title": "Confirm Candid Photographer & 360 Spin Booth",
+      "description": "Arrange equipment arrival 1 hour prior to guests for family portraits.",
+      "daysBeforeEvent": 7,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-07",
+      "category": "catering",
+      "title": "Final Bar & Grazing Table Quantities",
+      "description": "Ensure adequate ice stock, signature cocktail mixers, and glassware counts.",
+      "daysBeforeEvent": 3,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "caterer"
+    },
+    {
+      "id": "chk-bday-08",
+      "category": "entertainment",
+      "title": "Surprise Video Montage / Roast Screening Test",
+      "description": "Test projector, HDMI cable, sound sync with AV technician.",
+      "daysBeforeEvent": 1,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "host"
+    },
+    {
+      "id": "chk-bday-09",
+      "category": "logistics",
+      "title": "Cake Table Setup, Sparkler Candles & Welcoming",
+      "description": "Position cake table in prime lighting spot, distribute celebration sparklers.",
+      "daysBeforeEvent": 0,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "host"
+    }
+  ]
+}

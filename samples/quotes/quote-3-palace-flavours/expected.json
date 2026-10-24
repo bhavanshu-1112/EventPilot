@@ -1,0 +1,35 @@
+{
+  "_note": "Golden fixture: quote-3 triggers NON_REFUNDABLE, TRAVEL_STAY_CHARGE, and QUANTITY_MISMATCH (quoted 180 for 350 pax).",
+  "quoteId": "quote-3",
+  "extracted": {
+    "vendorName": "Palace Flavours Catering Co.",
+    "category": "catering",
+    "currency": "INR",
+    "validUntil": "2026-12-15",
+    "statedTotalMinor": 47100000,
+    "confidence": 0.93,
+    "lineItems": [
+      {
+        "id": "item-1",
+        "description": "Special Mewari Thali Banquet & Live Tandoor",
+        "quantity": 180,
+        "unit": "per guest",
+        "unitPriceMinor": 220000,
+        "totalMinor": 39600000,
+        "taxIncluded": true,
+        "sourceRef": "Particulars table row 1"
+      }
+    ],
+    "fees": [
+      {
+        "type": "Travel logistics and hotel accommodation for chefs",
+        "amountMinor": 7500000,
+        "sourceRef": "Logistics & Crew Expenses"
+      }
+    ],
+    "cancellationTerms": "Bookings are strictly non-refundable under any circumstances once token is received",
+    "inclusions": ["10% standard service charge included", "Local taxes included"],
+    "exclusions": []
+  },
+  "expectedFlags": ["NON_REFUNDABLE", "TRAVEL_STAY_CHARGE", "QUANTITY_MISMATCH"]
+}

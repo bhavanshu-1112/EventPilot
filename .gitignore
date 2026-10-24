@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Logs
+*.log
+logs/
+
+# Uploads (runtime)
+uploads/
+
+# Turbo
+.turbo/
+
+# Testing
+playwright-report/
+test-results/
+
+# Misc
+*.tsbuildinfo

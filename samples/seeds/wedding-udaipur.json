@@ -1,0 +1,214 @@
+{
+  "_note": "SAMPLE SEED DATA: Complete Udaipur destination wedding event seed.",
+  "event": {
+    "id": "evt-wedding-udaipur-01",
+    "name": "Aarav & Ananya Royal Udaipur Wedding",
+    "eventType": "wedding",
+    "location": "Udaipur, Rajasthan",
+    "eventDate": "2026-11-20",
+    "guestCount": 350,
+    "totalBudgetMinor": 350000000,
+    "currency": "INR",
+    "brief": {
+      "coupleNames": "Aarav Sharma & Ananya Singhania",
+      "vision": "A majestic Rajputana heritage wedding celebrating timeless Mewari architecture, royal lakeside courtyards, vibrant Marwari cultural customs, and modern hospitality.",
+      "tone": "Regal, intimate, festive, warm",
+      "preferredColorPalette": ["Royal Ochre", "Blush Rose", "Antique Gold", "Ivory"],
+      "dietaryPreferences": "Strict vegetarian Mewari royal banquets with live international chaat and craft mocktail lounge"
+    },
+    "categories": [
+      {
+        "id": "venue",
+        "label": "Heritage Palace & Lakeside Lawn",
+        "weight": 0.28,
+        "locked": true,
+        "floorPercent": 10,
+        "priority": 2,
+        "allocatedMinor": 98000000,
+        "spentMinor": 98000000
+      },
+      {
+        "id": "catering",
+        "label": "Mewari Royal Banquet & Chaat Street",
+        "weight": 0.28,
+        "locked": false,
+        "floorPercent": 10,
+        "priority": 3,
+        "allocatedMinor": 98000000,
+        "spentMinor": 75000000
+      },
+      {
+        "id": "decor",
+        "label": "Floating Mandap, Floral & Lights",
+        "weight": 0.16,
+        "locked": false,
+        "floorPercent": 5,
+        "priority": 5,
+        "allocatedMinor": 56000000,
+        "spentMinor": 38000000
+      },
+      {
+        "id": "photography",
+        "label": "Cinematography & Candid Masters",
+        "weight": 0.08,
+        "locked": false,
+        "floorPercent": 3,
+        "priority": 4,
+        "allocatedMinor": 28000000,
+        "spentMinor": 25000000
+      },
+      {
+        "id": "attire",
+        "label": "Couture Lehengas, Sherwanis & Safas",
+        "weight": 0.06,
+        "locked": false,
+        "floorPercent": 2,
+        "priority": 6,
+        "allocatedMinor": 21000000,
+        "spentMinor": 18000000
+      },
+      {
+        "id": "entertainment",
+        "label": "DJ Line Array, Sufi Fusion & Dhol",
+        "weight": 0.05,
+        "locked": false,
+        "floorPercent": 2,
+        "priority": 7,
+        "allocatedMinor": 17500000,
+        "spentMinor": 14000000
+      },
+      {
+        "id": "logistics",
+        "label": "Airport Shuttles & Power Backup",
+        "weight": 0.04,
+        "locked": false,
+        "floorPercent": 2,
+        "priority": 8,
+        "allocatedMinor": 14000000,
+        "spentMinor": 11000000
+      },
+      {
+        "id": "contingency",
+        "label": "Contingency & Reserve",
+        "weight": 0.05,
+        "locked": true,
+        "floorPercent": 5,
+        "priority": 1,
+        "allocatedMinor": 17500000,
+        "spentMinor": 0
+      }
+    ],
+    "timeline": [
+      {
+        "id": "item-safabandhi",
+        "label": "Groom Safa Bandhi (Turban Ceremony)",
+        "startMin": 0,
+        "durationMin": 45,
+        "fixed": false,
+        "dependsOn": [],
+        "bufferMin": 15,
+        "vendor": "Royal Safa Specialists",
+        "guestVisible": true,
+        "priority": 3
+      },
+      {
+        "id": "item-baraat",
+        "label": "Royal Baraat Procession with Vintage Car & Dhol",
+        "startMin": 60,
+        "durationMin": 60,
+        "fixed": false,
+        "dependsOn": ["item-safabandhi"],
+        "bufferMin": 15,
+        "vendor": "Mewar Royal Brass Band",
+        "guestVisible": true,
+        "priority": 2
+      },
+      {
+        "id": "item-milni",
+        "label": "Milni & Warm Lakeside Floral Welcome",
+        "startMin": 135,
+        "durationMin": 30,
+        "fixed": false,
+        "dependsOn": ["item-baraat"],
+        "bufferMin": 10,
+        "vendor": "Heritage Palace Staff",
+        "guestVisible": true,
+        "priority": 4
+      },
+      {
+        "id": "item-varmala",
+        "label": "Lakeside Varmala with Cold Pyro & Drone Capture",
+        "startMin": 175,
+        "durationMin": 30,
+        "fixed": false,
+        "dependsOn": ["item-milni"],
+        "bufferMin": 15,
+        "vendor": "Udaipur Cine Productions",
+        "guestVisible": true,
+        "priority": 1
+      },
+      {
+        "id": "item-pheras",
+        "label": "Sacred Pheras & Vedic Muhurat Rituals",
+        "startMin": 220,
+        "durationMin": 90,
+        "fixed": true,
+        "dependsOn": ["item-varmala"],
+        "bufferMin": 10,
+        "vendor": "Head Pandit Ji",
+        "guestVisible": true,
+        "priority": 1
+      },
+      {
+        "id": "item-dinner",
+        "label": "Gala Dinner Banquet & Sufi Fusion Performance",
+        "startMin": 320,
+        "durationMin": 120,
+        "fixed": false,
+        "dependsOn": ["item-pheras"],
+        "bufferMin": 15,
+        "vendor": "Royal Mewari Banquets",
+        "guestVisible": true,
+        "priority": 2
+      },
+      {
+        "id": "item-afterparty",
+        "label": "Indoor Heritage Lounge Afterparty & DJ Set",
+        "startMin": 455,
+        "durationMin": 120,
+        "fixed": false,
+        "dependsOn": ["item-dinner"],
+        "bufferMin": 0,
+        "vendor": "DJ line array setup",
+        "guestVisible": true,
+        "priority": 5
+      }
+    ],
+    "contacts": [
+      {
+        "id": "cont-01",
+        "name": "Aarav Sharma",
+        "role": "Groom",
+        "phone": "+91 98200 11223",
+        "email": "aarav@example.com",
+        "preferredChannel": "whatsapp"
+      },
+      {
+        "id": "cont-02",
+        "name": "Vikram Rathore",
+        "role": "Lead Wedding Planner",
+        "phone": "+91 98290 55667",
+        "email": "vikram@udaipurweddings.test",
+        "preferredChannel": "whatsapp"
+      },
+      {
+        "id": "cont-03",
+        "name": "Manish Sharma",
+        "role": "Catering Banquet Manager",
+        "phone": "+91 94140 88990",
+        "email": "banquets@mewarroyal.test",
+        "preferredChannel": "sms"
+      }
+    ]
+  }
+}

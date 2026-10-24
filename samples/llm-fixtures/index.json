@@ -1,0 +1,319 @@
+{
+  "_note": "Pre-recorded LLM response fixtures for offline execution and testing. Matches schema contracts perfectly.",
+  "fixtures": {
+    "extract_quote_1": {
+      "vendorName": "Royal Caterers & Banqueting",
+      "category": "catering",
+      "currency": "INR",
+      "validUntil": "2025-01-15",
+      "statedTotalMinor": 115000000,
+      "confidence": 0.95,
+      "lineItems": [
+        {
+          "description": "Grand Mewari Royal Dinner Buffet (Veg)",
+          "quantity": 350,
+          "unit": "per guest",
+          "unitPriceMinor": 240000,
+          "totalMinor": 84000000,
+          "taxIncluded": false,
+          "sourceRef": "Line items table row 1"
+        },
+        {
+          "description": "Live Old Delhi & Udaipur Chaat Street (6 Carts)",
+          "quantity": 350,
+          "unit": "per guest",
+          "unitPriceMinor": 50000,
+          "totalMinor": 17500000,
+          "taxIncluded": false,
+          "sourceRef": "Line items table row 2"
+        },
+        {
+          "description": "Artisanal Dessert & Mithai Grazing Island",
+          "quantity": 1,
+          "unit": "setup",
+          "unitPriceMinor": 10500000,
+          "totalMinor": 10500000,
+          "taxIncluded": false,
+          "sourceRef": "Line items table row 3"
+        }
+      ],
+      "fees": [],
+      "inclusions": [
+        "Bone-china crockery and cutlery",
+        "Chafing warmers and linen",
+        "45 uniformed hospitality staff"
+      ],
+      "exclusions": ["GST 5%", "Service charge"],
+      "paymentTerms": "50% advance upon contract signing, balance 7 days prior to event",
+      "cancellationTerms": "Non-refundable after booking confirmation"
+    },
+    "extract_quote_2": {
+      "vendorName": "Lakeview Banquets & Event Catering",
+      "category": "catering",
+      "currency": "INR",
+      "validUntil": "2026-11-30",
+      "statedTotalMinor": 123500000,
+      "confidence": 0.94,
+      "lineItems": [
+        {
+          "description": "Imperial Rajputana & Continental Gala Spread",
+          "quantity": 350,
+          "unit": "per guest",
+          "unitPriceMinor": 280000,
+          "totalMinor": 98000000,
+          "taxIncluded": true,
+          "sourceRef": "Service Package table row 1"
+        },
+        {
+          "description": "Cocktail Bar Service & Fresh Fruit Mixology",
+          "quantity": 350,
+          "unit": "per guest",
+          "unitPriceMinor": 60000,
+          "totalMinor": 21000000,
+          "taxIncluded": true,
+          "sourceRef": "Service Package table row 2"
+        }
+      ],
+      "fees": [
+        {
+          "type": "Kitchen setup and late-night breakdown fee",
+          "amountMinor": 4500000,
+          "sourceRef": "Additional Venue & Operational Fees"
+        },
+        {
+          "type": "Overtime service charge per hour after 11 PM",
+          "amountMinor": 2500000,
+          "sourceRef": "Fine print term 2"
+        },
+        {
+          "type": "Corkage fee per bottle for outside liquor",
+          "amountMinor": 150000,
+          "sourceRef": "Fine print term 3"
+        },
+        {
+          "type": "Advance booking deposit",
+          "percent": 0.6,
+          "basis": "total",
+          "sourceRef": "Fine print term 1"
+        }
+      ],
+      "inclusions": ["GST and 10% hospitality service charge included", "Bar glassware and ice"],
+      "exclusions": [],
+      "paymentTerms": "60% advance deposit upon confirmation, 40% on event morning",
+      "cancellationTerms": "50% refund up to 30 days prior, strictly non-refundable thereafter"
+    },
+    "extract_quote_3": {
+      "vendorName": "Palace Flavours Catering Co.",
+      "category": "catering",
+      "currency": "INR",
+      "validUntil": "2026-12-15",
+      "statedTotalMinor": 47100000,
+      "confidence": 0.93,
+      "lineItems": [
+        {
+          "description": "Special Mewari Thali Banquet & Live Tandoor",
+          "quantity": 180,
+          "unit": "per guest",
+          "unitPriceMinor": 220000,
+          "totalMinor": 39600000,
+          "taxIncluded": true,
+          "sourceRef": "Particulars table row 1"
+        }
+      ],
+      "fees": [
+        {
+          "type": "Travel logistics and hotel accommodation for chefs",
+          "amountMinor": 7500000,
+          "sourceRef": "Logistics & Crew Expenses"
+        }
+      ],
+      "inclusions": ["10% standard service charge included", "Local taxes included"],
+      "exclusions": [],
+      "paymentTerms": "40% advance booking, balance on arrival",
+      "cancellationTerms": "Bookings are strictly non-refundable under any circumstances once token is received"
+    },
+    "draft_negotiation_email": {
+      "subject": "Discussion on Catering Quote Ref #RC-2025 & Line Item Clarifications",
+      "body": "Dear Royal Caterers Team,\n\nThank you for providing the comprehensive proposal for our upcoming celebration in Udaipur. We love the Grand Mewari Royal Dinner Buffet and Live Chaat Street selections.\n\nUpon reviewing the quotation, we noticed that GST (5%) and service charges are currently listed as excluded, and the validity date has lapsed. Given our budget planning across multiple ceremonies for 350 guests, we would like to explore whether an all-inclusive package rate can be extended for the Grand Mewari Royal Buffet and Chaat Street items.\n\nPlease let us know if we can schedule a quick 10-minute call to align on these terms.\n\nWarm regards,\nEvent Planning Team",
+      "citedLineItemIds": [
+        "Grand Mewari Royal Dinner Buffet (Veg)",
+        "Live Old Delhi & Udaipur Chaat Street (6 Carts)"
+      ]
+    },
+    "draft_negotiation_whatsapp": {
+      "body": "Hi Royal Caterers team! 🙏 Thank you for sending over the quote for our 350-guest event in Udaipur. We really liked the Grand Mewari Royal Buffet menu! Could we discuss an all-inclusive rate that factors in GST and service charge so we can finalize our catering booking today? Looking forward to hearing from you!",
+      "citedLineItemIds": ["Grand Mewari Royal Dinner Buffet (Veg)"]
+    },
+    "propose_rebalance": {
+      "cuts": [
+        {
+          "categoryId": "decor",
+          "reduceByMinor": 3000000,
+          "reason": "Optimize floral arches to seasonal local marigold and fabric draping without compromising aesthetic scale.",
+          "impact": "Slight reduction in exotic imported florals, maintains vibrant traditional royal aesthetic."
+        },
+        {
+          "categoryId": "logistics",
+          "reduceByMinor": 2000000,
+          "reason": "Consolidate guest shuttle routes between city hotels and palace lawn.",
+          "impact": "Fewer idle vehicle hours, no guest disruption."
+        }
+      ],
+      "summary": "Absorbed 50,000 INR overrun by trimming non-essential imported decor flowers and optimizing transport logistics while fully protecting venue and mandatory contingency reserves."
+    },
+    "parse_brief_wedding": {
+      "eventType": "wedding",
+      "dates": ["2026-11-20", "2026-11-21", "2026-11-22"],
+      "city": "Udaipur",
+      "guestCount": 350,
+      "budgetMinor": 350000000,
+      "currency": "INR",
+      "vibe": ["royal", "heritage", "vibrant", "regal"],
+      "mustHaves": [
+        "Lake Pichola view",
+        "Royal Baraat with vintage car",
+        "Authentic Rajasthani and global cuisines"
+      ],
+      "dietary": [
+        "Pure vegetarian for religious ceremony",
+        "Jain options available",
+        "Cocktail bar setup"
+      ],
+      "accessibility": ["Golf carts for elderly relatives", "Step-free ramp to main mandap"],
+      "languages": ["Hindi", "English", "Marwari"],
+      "ceremonies": [
+        {
+          "name": "Mehendi & High Tea",
+          "date": "2026-11-20",
+          "guestCount": 200,
+          "venue": "Courtyard Lawn",
+          "budgetShare": 0.2
+        },
+        {
+          "name": "Sangeet Night",
+          "date": "2026-11-21",
+          "guestCount": 350,
+          "venue": "Palace Ballroom",
+          "budgetShare": 0.35
+        },
+        {
+          "name": "Royal Wedding & Gala Reception",
+          "date": "2026-11-22",
+          "guestCount": 350,
+          "venue": "Jagmandir Island",
+          "budgetShare": 0.45
+        }
+      ]
+    },
+    "parse_disruption": {
+      "itemId": "cake",
+      "vendorId": "baker",
+      "delayMin": 60,
+      "reason": "Delivery vehicle caught in downtown traffic congestion",
+      "needsClarification": false,
+      "clarifyingQuestion": null
+    },
+    "propose_schedule_fixes": {
+      "options": [
+        {
+          "label": "Swap Cake Cutting with Family Photoshoot",
+          "operations": [
+            {
+              "op": "swap",
+              "itemId": "cake",
+              "swapWithId": "photos"
+            }
+          ],
+          "rationale": "Keeps the overall dinner and party schedule intact with zero delay to guest dining."
+        },
+        {
+          "label": "Shift Cake Cutting by 30 Minutes and Compress Buffer",
+          "operations": [
+            {
+              "op": "shift",
+              "itemId": "cake",
+              "minutes": 30
+            }
+          ],
+          "rationale": "Absorbs 30 minutes into transition buffer and delays cake reveal slightly."
+        }
+      ]
+    },
+    "draft_notifications": {
+      "messages": [
+        {
+          "recipient": "+919876543210",
+          "recipientName": "Artisan Bakes",
+          "channel": "whatsapp",
+          "body": "Hi Artisan Bakes, please be advised that the Cake Cutting slot has been adjusted to 20:30. Please confirm your delivery ETA."
+        },
+        {
+          "recipient": "+919876543211",
+          "recipientName": "Host / Emcee",
+          "channel": "sms",
+          "body": "Timeline Update: Cake cutting moved to 20:30. Please proceed with family portraits and announce the brief program adjustment."
+        }
+      ]
+    },
+    "analyze_inspiration": {
+      "theme": "Royal Mewari Palace Elegance",
+      "paletteHex": ["#800020", "#D4AF37", "#1A2B4C", "#F4E8C1"],
+      "styleTags": ["royal", "heritage", "palace", "traditional"],
+      "bom": [
+        {
+          "catalogKey": "venue.heritage_palace_lawn",
+          "category": "venue",
+          "label": "Heritage Palace Lakeside Lawn",
+          "quantity": 1,
+          "rationale": "Iconic lakeside palace setting matching royal destination theme"
+        },
+        {
+          "catalogKey": "catering.rajasthani_royal_buffet",
+          "category": "catering",
+          "label": "Traditional Mewari Royal Buffet",
+          "quantity": 350,
+          "rationale": "Authentic royal multi-course dining experience for wedding banquet"
+        },
+        {
+          "catalogKey": "decor.mandap_floral_royal",
+          "category": "decor",
+          "label": "Grand Royal Floral Mandap",
+          "quantity": 1,
+          "rationale": "Centerpiece ceremonial mandap structure with regal marigold and rose draping"
+        },
+        {
+          "catalogKey": "entertainment.folk_fusion_troupe",
+          "category": "entertainment",
+          "label": "Rajasthani Folk Troupe & Manganiyar Fusion",
+          "quantity": 1,
+          "rationale": "Atmospheric cultural welcome and royal processional fanfare"
+        }
+      ]
+    },
+    "generate_ideas": {
+      "ideas": [
+        {
+          "title": "Royal Lakeside Lantern Send-Off",
+          "description": "Eco-friendly floating diya lanterns launched onto Lake Pichola following the evening reception.",
+          "category": "entertainment",
+          "estCostMinor": 3500000,
+          "whyItFits": "Creates an unforgettable visual spectacle honoring ancient Mewari water traditions."
+        },
+        {
+          "title": "Artisanal Block-Printing Favor Workshop",
+          "description": "Live master artisan booth stamping customized silk dupattas and pocket squares with the couple's monogram.",
+          "category": "decor",
+          "estCostMinor": 5000000,
+          "whyItFits": "Celebrates traditional Rajasthani craft and provides meaningful keepsake favors."
+        },
+        {
+          "title": "Late-Night Royal Kadak Chai & Kachori Cart",
+          "description": "Street cart serving hot spiced ginger chai, miniature pyaaz kachoris, and rabdi jalebis after Sangeet dancing.",
+          "category": "catering",
+          "estCostMinor": 2500000,
+          "whyItFits": "Keeps late-night party guests energized with authentic local comfort snacks."
+        }
+      ]
+    }
+  }
+}

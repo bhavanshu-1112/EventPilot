@@ -1,0 +1,60 @@
+{
+  "_note": "Golden fixture: quote-2 triggers OVERTIME_CHARGE, SETUP_TEARDOWN_FEE, and HIGH_DEPOSIT.",
+  "quoteId": "quote-2",
+  "extracted": {
+    "vendorName": "Lakeview Banquets & Event Catering",
+    "category": "catering",
+    "currency": "INR",
+    "validUntil": "2026-11-30",
+    "statedTotalMinor": 123500000,
+    "confidence": 0.94,
+    "lineItems": [
+      {
+        "id": "item-1",
+        "description": "Imperial Rajputana & Continental Gala Spread",
+        "quantity": 350,
+        "unit": "per guest",
+        "unitPriceMinor": 280000,
+        "totalMinor": 98000000,
+        "taxIncluded": true,
+        "sourceRef": "Service Package table row 1"
+      },
+      {
+        "id": "item-2",
+        "description": "Cocktail Bar Service & Fresh Fruit Mixology",
+        "quantity": 350,
+        "unit": "per guest",
+        "unitPriceMinor": 60000,
+        "totalMinor": 21000000,
+        "taxIncluded": true,
+        "sourceRef": "Service Package table row 2"
+      }
+    ],
+    "fees": [
+      {
+        "type": "Kitchen setup and late-night breakdown fee",
+        "amountMinor": 4500000,
+        "sourceRef": "Additional Venue & Operational Fees"
+      },
+      {
+        "type": "Overtime service charge per hour after 11 PM",
+        "amountMinor": 2500000,
+        "sourceRef": "Fine print term 2"
+      },
+      {
+        "type": "Corkage fee per bottle for outside liquor",
+        "amountMinor": 150000,
+        "sourceRef": "Fine print term 3"
+      },
+      {
+        "type": "Advance booking deposit",
+        "percent": 0.6,
+        "basis": "total",
+        "sourceRef": "Fine print term 1"
+      }
+    ],
+    "inclusions": ["GST and 10% hospitality service charge included", "Bar glassware and ice"],
+    "exclusions": []
+  },
+  "expectedFlags": ["OVERTIME_CHARGE", "SETUP_TEARDOWN_FEE", "HIGH_DEPOSIT"]
+}

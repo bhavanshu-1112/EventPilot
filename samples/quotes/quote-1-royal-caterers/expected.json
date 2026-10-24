@@ -1,0 +1,52 @@
+{
+  "_note": "Golden fixture: quote-1 has excluded GST, missing service charge, expired validity, and a sum mismatch.",
+  "quoteId": "quote-1",
+  "extracted": {
+    "vendorName": "Royal Caterers & Banqueting",
+    "category": "catering",
+    "currency": "INR",
+    "validUntil": "2025-01-15",
+    "statedTotalMinor": 115000000,
+    "confidence": 0.95,
+    "lineItems": [
+      {
+        "id": "item-1",
+        "description": "Grand Mewari Royal Dinner Buffet (Veg)",
+        "quantity": 350,
+        "unit": "per guest",
+        "unitPriceMinor": 240000,
+        "totalMinor": 84000000,
+        "taxIncluded": false,
+        "sourceRef": "Line items table row 1"
+      },
+      {
+        "id": "item-2",
+        "description": "Live Old Delhi & Udaipur Chaat Street (6 Carts)",
+        "quantity": 350,
+        "unit": "per guest",
+        "unitPriceMinor": 50000,
+        "totalMinor": 17500000,
+        "taxIncluded": false,
+        "sourceRef": "Line items table row 2"
+      },
+      {
+        "id": "item-3",
+        "description": "Artisanal Dessert & Mithai Grazing Island",
+        "quantity": 1,
+        "unit": "setup",
+        "unitPriceMinor": 10500000,
+        "totalMinor": 10500000,
+        "taxIncluded": false,
+        "sourceRef": "Line items table row 3"
+      }
+    ],
+    "fees": [],
+    "inclusions": [
+      "Bone-china crockery and cutlery",
+      "Chafing warmers and linen",
+      "45 uniformed hospitality staff"
+    ],
+    "exclusions": ["GST 5%", "Service charge"]
+  },
+  "expectedFlags": ["TAX_EXCLUDED", "SERVICE_CHARGE_MISSING", "VALIDITY_EXPIRED", "SUM_MISMATCH"]
+}

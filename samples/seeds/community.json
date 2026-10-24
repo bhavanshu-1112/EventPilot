@@ -1,0 +1,166 @@
+{
+  "_note": "SAMPLE SEED DATA: Complete community cultural festival event seed with civic permits and volunteer coordination.",
+  "event": {
+    "id": "evt-community-01",
+    "name": "Mewar Heritage Youth & Folk Festival 2026",
+    "eventType": "community",
+    "location": "Udaipur Municipal Cultural Grounds",
+    "eventDate": "2026-12-05",
+    "guestCount": 1200,
+    "totalBudgetMinor": 80000000,
+    "currency": "INR",
+    "brief": {
+      "organizer": "Mewar Youth Cultural Association",
+      "vision": "A full-day public festival celebrating Rajasthani folk music, indigenous craft artisans, youth debate competitions, open community langar, and cultural troupes.",
+      "tone": "Vibrant, inclusive, energetic, orderly",
+      "permissionsRequired": [
+        "Nagar Nigam Grounds Lease",
+        "City Police Traffic Clearance",
+        "Fire Safety Clearance",
+        "IPRS Music License"
+      ]
+    },
+    "categories": [
+      {
+        "id": "venue",
+        "label": "Grounds, Security & Civic Permits",
+        "weight": 0.22,
+        "locked": true,
+        "floorPercent": 5,
+        "priority": 2,
+        "allocatedMinor": 17600000,
+        "spentMinor": 17600000
+      },
+      {
+        "id": "catering",
+        "label": "Community Mahaprasad Langar & Stalls",
+        "weight": 0.3,
+        "locked": false,
+        "floorPercent": 8,
+        "priority": 3,
+        "allocatedMinor": 24000000,
+        "spentMinor": 21000000
+      },
+      {
+        "id": "logistics",
+        "label": "Generators, Sanitation & Volunteer Kits",
+        "weight": 0.2,
+        "locked": false,
+        "floorPercent": 5,
+        "priority": 4,
+        "allocatedMinor": 16000000,
+        "spentMinor": 13500000
+      },
+      {
+        "id": "entertainment",
+        "label": "Folk Dancers, Sound PA & Trophies",
+        "weight": 0.12,
+        "locked": false,
+        "floorPercent": 2,
+        "priority": 5,
+        "allocatedMinor": 9600000,
+        "spentMinor": 8000000
+      },
+      {
+        "id": "decor",
+        "label": "German Hangar Tent, Gate & Banners",
+        "weight": 0.06,
+        "locked": false,
+        "floorPercent": 2,
+        "priority": 6,
+        "allocatedMinor": 4800000,
+        "spentMinor": 4200000
+      },
+      {
+        "id": "contingency",
+        "label": "Emergency Reserve",
+        "weight": 0.1,
+        "locked": true,
+        "floorPercent": 5,
+        "priority": 1,
+        "allocatedMinor": 8000000,
+        "spentMinor": 0
+      }
+    ],
+    "timeline": [
+      {
+        "id": "item-inauguration",
+        "label": "Lamp Lighting & Dignitary Inauguration",
+        "startMin": 0,
+        "durationMin": 45,
+        "fixed": true,
+        "dependsOn": [],
+        "bufferMin": 15,
+        "vendor": "Stage Protocol Team",
+        "guestVisible": true,
+        "priority": 1
+      },
+      {
+        "id": "item-youth-competitions",
+        "label": "Inter-College Folk Music & Debate Heats",
+        "startMin": 60,
+        "durationMin": 150,
+        "fixed": false,
+        "dependsOn": ["item-inauguration"],
+        "bufferMin": 20,
+        "vendor": "Cultural Committee Judges",
+        "guestVisible": true,
+        "priority": 3
+      },
+      {
+        "id": "item-community-langar",
+        "label": "Community Langar Feast Service",
+        "startMin": 230,
+        "durationMin": 120,
+        "fixed": false,
+        "dependsOn": ["item-youth-competitions"],
+        "bufferMin": 30,
+        "vendor": "Langar Volunteer Squad",
+        "guestVisible": true,
+        "priority": 2
+      },
+      {
+        "id": "item-headline-troupe",
+        "label": "Headline Rajasthani Folk Ensemble Performance",
+        "startMin": 380,
+        "durationMin": 90,
+        "fixed": true,
+        "dependsOn": ["item-community-langar"],
+        "bufferMin": 15,
+        "vendor": "Manganiyar Troupe",
+        "guestVisible": true,
+        "priority": 1
+      },
+      {
+        "id": "item-awards-closing",
+        "label": "Awards Presentation, Vote of Thanks & National Anthem",
+        "startMin": 485,
+        "durationMin": 45,
+        "fixed": false,
+        "dependsOn": ["item-headline-troupe"],
+        "bufferMin": 0,
+        "vendor": "Organizing Committee",
+        "guestVisible": true,
+        "priority": 2
+      }
+    ],
+    "contacts": [
+      {
+        "id": "cont-comm-01",
+        "name": "Dr. Devendra Joshi",
+        "role": "General Secretary",
+        "phone": "+91 94141 33445",
+        "email": "secretary@mewarculture.test",
+        "preferredChannel": "sms"
+      },
+      {
+        "id": "cont-comm-02",
+        "name": "Sunita Rawat",
+        "role": "Chief Volunteer Coordinator",
+        "phone": "+91 94142 66778",
+        "email": "volunteers@mewarculture.test",
+        "preferredChannel": "whatsapp"
+      }
+    ]
+  }
+}

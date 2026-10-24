@@ -1,0 +1,107 @@
+{
+  "_note": "SAMPLE DATA: Pre-event checklist template for public festivals, charity galas, and community cultural events with volunteer and permit milestones.",
+  "eventType": "community",
+  "name": "Community Cultural Festival & Gala Checklist",
+  "items": [
+    {
+      "id": "chk-comm-01",
+      "category": "venue",
+      "title": "Grounds Allotment & Civic Permissions",
+      "description": "Submit application to municipal corporation (Nagar Nigam) for grounds lease, public park usage, and fire safety inspection.",
+      "daysBeforeEvent": 90,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "organizer"
+    },
+    {
+      "id": "chk-comm-02",
+      "category": "logistics",
+      "title": "Police Clearance & Traffic Management Plan",
+      "description": "Meet with local traffic division to map vehicle diversion, parking ground signage, and emergency ambulance access lanes.",
+      "daysBeforeEvent": 60,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "organizer"
+    },
+    {
+      "id": "chk-comm-03",
+      "category": "logistics",
+      "title": "Volunteer Recruitment & Committee Lead Assignment",
+      "description": "Onboard 40+ volunteers across registration, food distribution, crowd flow, stage hospitality, and clean-up squad.",
+      "daysBeforeEvent": 45,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "volunteer-coordinator"
+    },
+    {
+      "id": "chk-comm-04",
+      "category": "entertainment",
+      "title": "Cultural Troupe Booking & Sound License (IPRS / PPL)",
+      "description": "Confirm artists, folk dancers, school choir participation, and obtain required public music performance licenses.",
+      "daysBeforeEvent": 30,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "cultural-head"
+    },
+    {
+      "id": "chk-comm-05",
+      "category": "decor",
+      "title": "Welcome Arch, Stage Truss & Shamiyana Setup",
+      "description": "Review vendor site inspection for waterproof German hangar tents, green rooms, and drinking water water-cooler kiosks.",
+      "daysBeforeEvent": 20,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "site-manager"
+    },
+    {
+      "id": "chk-comm-06",
+      "category": "catering",
+      "title": "Langar / Food Stall Vendor Health Certificates",
+      "description": "Inspect food preparation hygiene protocols, raw ingredient sourcing, and waste management trash bins.",
+      "daysBeforeEvent": 15,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "food-committee"
+    },
+    {
+      "id": "chk-comm-07",
+      "category": "logistics",
+      "title": "Volunteer Briefing & Walkthrough Rehearsal",
+      "description": "Distribute volunteer ID badges, high-visibility jackets, walkie-talkies, and execute crowd evacuation drill.",
+      "daysBeforeEvent": 7,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "volunteer-coordinator"
+    },
+    {
+      "id": "chk-comm-08",
+      "category": "logistics",
+      "title": "First Aid Post & Drinking Water Tanker Dispatch",
+      "description": "Confirm on-site paramedic team, doctor desk, and 4 freshwater tankers with municipal supply.",
+      "daysBeforeEvent": 2,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "organizer"
+    },
+    {
+      "id": "chk-comm-09",
+      "category": "entertainment",
+      "title": "Stage Sound Check & Dignitary Protocol Rehearsal",
+      "description": "Test stage monitors, podium microphone, VIP seating arrangement, and award plaques.",
+      "daysBeforeEvent": 1,
+      "priority": "medium",
+      "defaultStatus": "needed",
+      "role": "stage-manager"
+    },
+    {
+      "id": "chk-comm-10",
+      "category": "logistics",
+      "title": "Live Festival Gates Open & Crowd Marshalling",
+      "description": "Station volunteers at entry bag-check gates, manage live announcer broadcasts, and maintain trash clearings.",
+      "daysBeforeEvent": 0,
+      "priority": "high",
+      "defaultStatus": "needed",
+      "role": "volunteer-coordinator"
+    }
+  ]
+}

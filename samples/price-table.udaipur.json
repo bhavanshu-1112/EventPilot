@@ -1,0 +1,857 @@
+{
+  "_note": "SAMPLE DATA, not real market prices. Curated baseline estimates for Udaipur events across budget tiers.",
+  "location": "Udaipur, Rajasthan",
+  "currency": "INR",
+  "items": [
+    {
+      "catalogKey": "venue.heritage_palace_lawn",
+      "name": "Heritage Palace Lakeside Lawn",
+      "category": "venue",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Boutique Haveli Courtyard",
+          "priceMinor": 35000000,
+          "description": "Inner courtyard capacity 200, 4-hour rental"
+        },
+        "standard": {
+          "name": "Lake Pichola Heritage Lawn",
+          "priceMinor": 75000000,
+          "description": "Lakeside garden with palace facade backdrop, full evening"
+        },
+        "splurge": {
+          "name": "Royal Island Palace Pavilion",
+          "priceMinor": 180000000,
+          "description": "Exclusive island access with royal jetty arrival and illuminated battlements"
+        }
+      },
+      "alternatives": ["venue.boutique_resort_banquet", "venue.city_heritage_hall"],
+      "tags": ["wedding", "outdoor", "scenic"]
+    },
+    {
+      "catalogKey": "venue.boutique_resort_banquet",
+      "name": "Aravalli Hill Resort Banquet",
+      "category": "venue",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Resort AC Hall",
+          "priceMinor": 20000000,
+          "description": "Indoor hall with pool deck access"
+        },
+        "standard": {
+          "name": "Mountain View Terrace & Hall",
+          "priceMinor": 45000000,
+          "description": "Terrace lawn + air-conditioned glass pavilion"
+        },
+        "splurge": {
+          "name": "Full Hillside Resort Buyout",
+          "priceMinor": 120000000,
+          "description": "All 45 rooms, infinity lawn, and private dining pavilions"
+        }
+      },
+      "alternatives": ["venue.heritage_palace_lawn"],
+      "tags": ["wedding", "birthday", "indoor-outdoor"]
+    },
+    {
+      "catalogKey": "venue.community_civic_hall",
+      "name": "Civic Community Center & Grounds",
+      "category": "venue",
+      "unit": "per day",
+      "tiers": {
+        "save": {
+          "name": "Open Ground Only",
+          "priceMinor": 5000000,
+          "description": "Municipal open grounds with basic water & power"
+        },
+        "standard": {
+          "name": "Grounds + Covered Community Hall",
+          "priceMinor": 12000000,
+          "description": "Covered auditorium plus parking and perimeter fencing"
+        },
+        "splurge": {
+          "name": "Air-Conditioned Cultural Complex",
+          "priceMinor": 25000000,
+          "description": "Auditorium, green rooms, cafeteria and exhibition halls"
+        }
+      },
+      "alternatives": ["venue.boutique_resort_banquet"],
+      "tags": ["community", "public"]
+    },
+    {
+      "catalogKey": "venue.rooftop_lounge",
+      "name": "Old City Rooftop Lounge",
+      "category": "venue",
+      "unit": "per evening",
+      "tiers": {
+        "save": {
+          "name": "Reserved Deck Section",
+          "priceMinor": 8000000,
+          "description": "Sectioned outdoor deck for up to 50 guests"
+        },
+        "standard": {
+          "name": "Exclusive Rooftop Hire",
+          "priceMinor": 18000000,
+          "description": "Full rooftop with lake view, sound setup permitted till 10 PM"
+        },
+        "splurge": {
+          "name": "Luxury Penthouse Terrace Lounge",
+          "priceMinor": 35000000,
+          "description": "Private bar, infinity plunge pool, and dedicated butler crew"
+        }
+      },
+      "alternatives": ["venue.boutique_resort_banquet"],
+      "tags": ["birthday", "cocktails"]
+    },
+    {
+      "catalogKey": "catering.rajasthani_royal_buffet",
+      "name": "Traditional Mewari Royal Buffet",
+      "category": "catering",
+      "unit": "per guest",
+      "tiers": {
+        "save": {
+          "name": "Classic Mewari Thali Counter",
+          "priceMinor": 180000,
+          "description": "Dal Baati Churma, Gatte, Ker Sangri, 2 sweets"
+        },
+        "standard": {
+          "name": "Grand Royal Feast (Veg)",
+          "priceMinor": 320000,
+          "description": "4 live chaat counters, 6 main courses, artisanal breads, 4 desserts"
+        },
+        "splurge": {
+          "name": "Imperial Rajputana Banqueting",
+          "priceMinor": 650000,
+          "description": "Silver service, organic heirloom ingredients, saffron desserts & live tandoor"
+        }
+      },
+      "alternatives": ["catering.pan_asian_continental", "catering.live_street_food"],
+      "tags": ["wedding", "dinner"]
+    },
+    {
+      "catalogKey": "catering.pan_asian_continental",
+      "name": "Global Contemporary Live Counters",
+      "category": "catering",
+      "unit": "per guest",
+      "tiers": {
+        "save": {
+          "name": "Italian Pasta & Mexican Station",
+          "priceMinor": 150000,
+          "description": "Live pasta wheel and build-your-own taco bar"
+        },
+        "standard": {
+          "name": "Asian Wok & Woodfired Pizza Grill",
+          "priceMinor": 280000,
+          "description": "Dim sum station, stir-fry noodle bar, wood-fired sourdough pizzas"
+        },
+        "splurge": {
+          "name": "Gourmet Robata & Sushi Bar",
+          "priceMinor": 550000,
+          "description": "Imported ingredients, robata skewers, bespoke dessert station"
+        }
+      },
+      "alternatives": ["catering.rajasthani_royal_buffet"],
+      "tags": ["wedding", "birthday", "cocktails"]
+    },
+    {
+      "catalogKey": "catering.live_street_food",
+      "name": "Old Delhi & Udaipur Street Chaat Bazaar",
+      "category": "catering",
+      "unit": "per guest",
+      "tiers": {
+        "save": {
+          "name": "Essential 4-Cart Chaat Stall",
+          "priceMinor": 65000,
+          "description": "Pani puri, aloo tikki, papdi chaat, and kachori"
+        },
+        "standard": {
+          "name": "8-Cart Craft Chaat Street",
+          "priceMinor": 120000,
+          "description": "Artisanal pani puri shots, dahi bhalla, ram ladoo, kulfi falooda"
+        },
+        "splurge": {
+          "name": "Heritage Street Food Carnival",
+          "priceMinor": 220000,
+          "description": "15 bespoke stalls including Lucknowi kebabs, Indore poha, Matka kulfi"
+        }
+      },
+      "alternatives": ["catering.rajasthani_royal_buffet"],
+      "tags": ["wedding", "birthday", "sangeet"]
+    },
+    {
+      "catalogKey": "catering.cocktail_bar_service",
+      "name": "Craft Mixology & Beverage Bar",
+      "category": "catering",
+      "unit": "per guest",
+      "tiers": {
+        "save": {
+          "name": "Standard Mocktail & Beer Station",
+          "priceMinor": 80000,
+          "description": "4 signature mocktails, soft drinks, ice and basic glassware"
+        },
+        "standard": {
+          "name": "Artisanal Cocktail Bar",
+          "priceMinor": 180000,
+          "description": "Botanical syrups, house-made shrubs, flair bartenders, premium glassware"
+        },
+        "splurge": {
+          "name": "Molecular Bar Experience",
+          "priceMinor": 380000,
+          "description": "Liquid nitrogen cocktails, smoked infusions, engraved ice cubes, flair master"
+        }
+      },
+      "alternatives": ["catering.live_street_food"],
+      "tags": ["cocktails", "sangeet"]
+    },
+    {
+      "catalogKey": "catering.birthday_designer_cake",
+      "name": "Custom Themed Celebration Cake",
+      "category": "catering",
+      "unit": "per kg",
+      "tiers": {
+        "save": {
+          "name": "Fresh Cream Fondant Accents",
+          "priceMinor": 120000,
+          "description": "Layered sponge cake with butter cream and printed theme topper"
+        },
+        "standard": {
+          "name": "Multi-Tier Sculpted Cake",
+          "priceMinor": 250000,
+          "description": "Hand-crafted sugar flowers or 3D theme elements with Belgian chocolate"
+        },
+        "splurge": {
+          "name": "Architectural Gravity-Defying Cake",
+          "priceMinor": 500000,
+          "description": "Suspended or illuminated structure with motorized rotating tiers"
+        }
+      },
+      "alternatives": ["catering.dessert_table"],
+      "tags": ["birthday"]
+    },
+    {
+      "catalogKey": "catering.dessert_table",
+      "name": "Artisanal Dessert Grazing Table",
+      "category": "catering",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Petit Fours & Macaron Tower",
+          "priceMinor": 3000000,
+          "description": "4 assorted mini pastries, brownies and macarons"
+        },
+        "standard": {
+          "name": "Stylized Sweet Table",
+          "priceMinor": 6500000,
+          "description": "Custom color-matched dessert array with donuts wall and mousse shooters"
+        },
+        "splurge": {
+          "name": "Live Nitrogen Ice Cream & Churros Bar",
+          "priceMinor": 15000000,
+          "description": "Interactive nitro station with gold-leaf garnishes and molten fountains"
+        }
+      },
+      "alternatives": ["catering.birthday_designer_cake"],
+      "tags": ["birthday", "wedding"]
+    },
+    {
+      "catalogKey": "catering.community_langar_meal",
+      "name": "Community Feast / Mahaprasad",
+      "category": "catering",
+      "unit": "per guest",
+      "tiers": {
+        "save": {
+          "name": "Basic Pattedar Prasadam",
+          "priceMinor": 45000,
+          "description": "Puri, aloo sabzi, sweet halwa, eco leaf plates"
+        },
+        "standard": {
+          "name": "Traditional 5-Dish Feast",
+          "priceMinor": 85000,
+          "description": "Kadhi, khichdi, 2 seasonal vegetables, puri, gulab jamun"
+        },
+        "splurge": {
+          "name": "Deluxe Community Spread",
+          "priceMinor": 150000,
+          "description": "Penne pasta, paneer butter masala, raita, 2 mithais, stainless thalis"
+        }
+      },
+      "alternatives": ["catering.rajasthani_royal_buffet"],
+      "tags": ["community"]
+    },
+    {
+      "catalogKey": "decor.mandap_floral_canopy",
+      "name": "Floating / Lakeside Mandap Structure",
+      "category": "decor",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Fabric Drape & Marigold Mandap",
+          "priceMinor": 15000000,
+          "description": "Traditional 4-pillar brass structure with orange/yellow marigold garlands"
+        },
+        "standard": {
+          "name": "Fresh Exotic Floral Mandap",
+          "priceMinor": 38000000,
+          "description": "Hydrangeas, tuberose, baby's breath, brass bells and crystal chandeliers"
+        },
+        "splurge": {
+          "name": "Floating Glass Pavilion Mandap",
+          "priceMinor": 95000000,
+          "description": "Cantilevered platform over water, mirrored pillars, Dutch imported roses"
+        }
+      },
+      "alternatives": ["decor.minimalist_geometric_arch"],
+      "tags": ["wedding", "ceremony"]
+    },
+    {
+      "catalogKey": "decor.minimalist_geometric_arch",
+      "name": "Contemporary Floral Arch & Backdrop",
+      "category": "decor",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Wood Hexagon Arch",
+          "priceMinor": 4500000,
+          "description": "Eucalyptus greens and pampas grass accents"
+        },
+        "standard": {
+          "name": "Metallic Gilded Double Arch",
+          "priceMinor": 12000000,
+          "description": "Lush foliage, pastel carnations and warm Edison bulbs"
+        },
+        "splurge": {
+          "name": "Full Monochromatic Floral Wall",
+          "priceMinor": 30000000,
+          "description": "Seamless 20x10 ft dense floral installation with custom neon lettering"
+        }
+      },
+      "alternatives": ["decor.mandap_floral_canopy"],
+      "tags": ["birthday", "wedding"]
+    },
+    {
+      "catalogKey": "decor.lighting_fairy_canopy",
+      "name": "Canopy Fairy Lights & Architectural Uplighting",
+      "category": "decor",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Warm White String Light Tent",
+          "priceMinor": 5000000,
+          "description": "500 meters of warm LED string lights over lawn"
+        },
+        "standard": {
+          "name": "Immersive Fairy Tunnel & Uplights",
+          "priceMinor": 14000000,
+          "description": "Entry light tunnel, tree wrapping and 40 architectural LED PAR cans"
+        },
+        "splurge": {
+          "name": "Programmable Pixel Mapping & Chandeliers",
+          "priceMinor": 35000000,
+          "description": "Computerized wash lighting, antique crystal chandeliers, moving heads"
+        }
+      },
+      "alternatives": ["decor.stage_sound_production"],
+      "tags": ["wedding", "dinner", "evening"]
+    },
+    {
+      "catalogKey": "decor.table_centerpieces_linens",
+      "name": "Banquet Table Styling & Centerpieces",
+      "category": "decor",
+      "unit": "per table",
+      "tiers": {
+        "save": {
+          "name": "Linen Runner & Brass Candelabra",
+          "priceMinor": 250000,
+          "description": "Satin runner, votives, brass urli with floating petals"
+        },
+        "standard": {
+          "name": "Elevated Floral Arrangement",
+          "priceMinor": 650000,
+          "description": "Tall glass vase with orchid blooms, luxury damask tablecloth, charger plates"
+        },
+        "splurge": {
+          "name": "Sculptural Crystal & Bloom Art",
+          "priceMinor": 1500000,
+          "description": "Custom brass trees with cascading crystals, personalized menu cards, silk napery"
+        }
+      },
+      "alternatives": ["decor.lighting_fairy_canopy"],
+      "tags": ["wedding", "dinner"]
+    },
+    {
+      "catalogKey": "decor.theme_birthday_backdrop",
+      "name": "Custom Birthday Stage & Balloon Arch",
+      "category": "decor",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Organic Balloon Garland & Banner",
+          "priceMinor": 3500000,
+          "description": "Double-stuffed latex balloon arch, custom cardstock name cutout"
+        },
+        "standard": {
+          "name": "3D Layered Arch & Neon Sign",
+          "priceMinor": 9500000,
+          "description": "Wooden arch panels, neon age signage, pedestals and matching balloon cloud"
+        },
+        "splurge": {
+          "name": "Full Immersive Theme Set",
+          "priceMinor": 22000000,
+          "description": "Large format 3D props, shimmer wall, LED numbers and fog entrance"
+        }
+      },
+      "alternatives": ["decor.minimalist_geometric_arch"],
+      "tags": ["birthday"]
+    },
+    {
+      "catalogKey": "decor.community_gate_and_tents",
+      "name": "Festival Welcome Gate & Shamiyana Tents",
+      "category": "decor",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Cloth Archway & 2 Pagoda Tents",
+          "priceMinor": 4000000,
+          "description": "Traditional printed cotton gateway with 10x10 canopies"
+        },
+        "standard": {
+          "name": "Truss Welcome Arch & German Hangar",
+          "priceMinor": 15000000,
+          "description": "Box truss entry with vinyl graphics and 40x60 waterproof German shed"
+        },
+        "splurge": {
+          "name": "Themed Rajasthani Fort Gate",
+          "priceMinor": 35000000,
+          "description": "Fiberglass replica haveli facade with illuminated branding and VIP lounges"
+        }
+      },
+      "alternatives": ["decor.lighting_fairy_canopy"],
+      "tags": ["community"]
+    },
+    {
+      "catalogKey": "photography.candid_wedding_package",
+      "name": "Candid Photography & Cinematic Film",
+      "category": "photography",
+      "unit": "per 2-day event",
+      "tiers": {
+        "save": {
+          "name": "Essential 2-Crew Coverage",
+          "priceMinor": 12000000,
+          "description": "1 candid photographer + 1 traditional videographer, 300 edited photos"
+        },
+        "standard": {
+          "name": "Cinematic 4-Crew Team",
+          "priceMinor": 28000000,
+          "description": "2 candid photo, 2 cinema video, drone coverage, 4K teaser, 25-min film"
+        },
+        "splurge": {
+          "name": "Editorial Production Master Crew",
+          "priceMinor": 65000000,
+          "description": "Celebrity photographer, Director of Photography, live drone stream, same-day edit trailer"
+        }
+      },
+      "alternatives": ["photography.traditional_photo_booth"],
+      "tags": ["wedding"]
+    },
+    {
+      "catalogKey": "photography.birthday_party_coverage",
+      "name": "Birthday Event Photography",
+      "category": "photography",
+      "unit": "per 4-hour event",
+      "tiers": {
+        "save": {
+          "name": "Solo Candid Photographer",
+          "priceMinor": 1500000,
+          "description": "1 photographer, raw files + 50 color graded highlights"
+        },
+        "standard": {
+          "name": "Photo + Highlight Reel",
+          "priceMinor": 3500000,
+          "description": "1 photographer + 1 reel maker for 60s Instagram video reels"
+        },
+        "splurge": {
+          "name": "Multi-Cam + Instant Delivery",
+          "priceMinor": 8000000,
+          "description": "2 shooters, live AI face recognition photo sharing for guests in real time"
+        }
+      },
+      "alternatives": ["photography.traditional_photo_booth"],
+      "tags": ["birthday"]
+    },
+    {
+      "catalogKey": "photography.traditional_photo_booth",
+      "name": "Interactive Photo Booth",
+      "category": "photography",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Digital Selfie Kiosk",
+          "priceMinor": 1200000,
+          "description": "iPad ring light booth with instant WhatsApp and AirDrop sharing"
+        },
+        "standard": {
+          "name": "360 Rotating Video Booth",
+          "priceMinor": 2800000,
+          "description": "Motorized platform with slow-motion camera, music overlays and LED props"
+        },
+        "splurge": {
+          "name": "Vogue Light Tunnel Magazine Booth",
+          "priceMinor": 6000000,
+          "description": "Walk-in mirrored tube with infinity LED lights and high-res DSLR prints"
+        }
+      },
+      "alternatives": ["photography.birthday_party_coverage"],
+      "tags": ["wedding", "birthday"]
+    },
+    {
+      "catalogKey": "photography.community_media_crew",
+      "name": "Community Festival Event Media",
+      "category": "photography",
+      "unit": "per day",
+      "tiers": {
+        "save": {
+          "name": "Documentation Photographer",
+          "priceMinor": 1000000,
+          "description": "Archive shots for press and annual report"
+        },
+        "standard": {
+          "name": "Photo & Social Media Video Crew",
+          "priceMinor": 2500000,
+          "description": "Interviews with volunteers/dignitaries, daily wrap-up clip"
+        },
+        "splurge": {
+          "name": "Multi-Camera Live Broadcast Unit",
+          "priceMinor": 7500000,
+          "description": "3-camera live stream to YouTube/Facebook with broadcast switcher"
+        }
+      },
+      "alternatives": ["photography.candid_wedding_package"],
+      "tags": ["community"]
+    },
+    {
+      "catalogKey": "entertainment.sangeet_dj_sound",
+      "name": "Sangeet / Party DJ & Line Array Sound",
+      "category": "entertainment",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Resident Club DJ + JBL Tops",
+          "priceMinor": 3500000,
+          "description": "DJ console, 2 powered speakers, wireless mics, Bollywood mix"
+        },
+        "standard": {
+          "name": "Top Tier Wedding DJ + Line Array",
+          "priceMinor": 9500000,
+          "description": "Pro line-array sound, live percussionist accompanying DJ, smoke haze"
+        },
+        "splurge": {
+          "name": "Headline Bollywood Celebrity DJ",
+          "priceMinor": 28000000,
+          "description": "Renowned festival DJ, touring sound engineer, cold pyrotechnics"
+        }
+      },
+      "alternatives": ["entertainment.live_folk_fusion_band"],
+      "tags": ["wedding", "birthday", "sangeet"]
+    },
+    {
+      "catalogKey": "entertainment.live_folk_fusion_band",
+      "name": "Rajasthani Folk & Sufi Fusion Troupe",
+      "category": "entertainment",
+      "unit": "per 2-hour set",
+      "tiers": {
+        "save": {
+          "name": "Traditional Manganiyar Quartet",
+          "priceMinor": 2500000,
+          "description": "Kamayacha, dholak, khartal and vocals for guest welcome"
+        },
+        "standard": {
+          "name": "6-Piece Sufi Rock Ensemble",
+          "priceMinor": 6500000,
+          "description": "Acoustic & electric instruments blending folk melodies with rock beats"
+        },
+        "splurge": {
+          "name": "Celebrity Sufi Maestro Performance",
+          "priceMinor": 18000000,
+          "description": "12-musician full orchestral setup with grand piano and sound engineer"
+        }
+      },
+      "alternatives": ["entertainment.sangeet_dj_sound"],
+      "tags": ["wedding", "cocktails"]
+    },
+    {
+      "catalogKey": "entertainment.emcee_host",
+      "name": "Professional Anchor & Emcee",
+      "category": "entertainment",
+      "unit": "per evening",
+      "tiers": {
+        "save": {
+          "name": "Local Bilingual Emcee",
+          "priceMinor": 1000000,
+          "description": "Hindi and English announcements and schedule coordination"
+        },
+        "standard": {
+          "name": "Experienced Wedding / Corporate Host",
+          "priceMinor": 2500000,
+          "description": "Engaging interactive games, family quiz, smooth crowd transition"
+        },
+        "splurge": {
+          "name": "TV Presenter / Celebrity Emcee",
+          "priceMinor": 7500000,
+          "description": "High-profile personality with tailored comedic scripts and rehearsal sessions"
+        }
+      },
+      "alternatives": ["entertainment.sangeet_dj_sound"],
+      "tags": ["wedding", "birthday", "community"]
+    },
+    {
+      "catalogKey": "entertainment.kids_activities_magic",
+      "name": "Kids Entertainment & Game Master",
+      "category": "entertainment",
+      "unit": "per 3-hour event",
+      "tiers": {
+        "save": {
+          "name": "Tattoo Artist & Balloon Modeler",
+          "priceMinor": 800000,
+          "description": "Face painting, temporary glitter tattoos and animal balloons"
+        },
+        "standard": {
+          "name": "Interactive Magician & Game Host",
+          "priceMinor": 1800000,
+          "description": "Comedy illusion show, pass-the-parcel, musical chairs and prizes"
+        },
+        "splurge": {
+          "name": "Full Carnival Zone & Inflatables",
+          "priceMinor": 4500000,
+          "description": "Giant bouncy castle, foam pit, mascot characters and popcorn/cotton candy"
+        }
+      },
+      "alternatives": ["entertainment.emcee_host"],
+      "tags": ["birthday", "community"]
+    },
+    {
+      "catalogKey": "entertainment.cultural_dance_troupe",
+      "name": "Community Cultural Troupe & Brass Band",
+      "category": "entertainment",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Local Dhol Tasha Troupe",
+          "priceMinor": 1200000,
+          "description": "8 dhol drummers for high-energy rally or procession"
+        },
+        "standard": {
+          "name": "Ghoomar & Kalbelia Folk Dancers",
+          "priceMinor": 3000000,
+          "description": "Costumed troupe of 8 dancers with fire-eating and pot balancing"
+        },
+        "splurge": {
+          "name": "Symphonic Brass Band & Dancers",
+          "priceMinor": 7000000,
+          "description": "25-piece vintage royal bagpiper and brass band in uniform"
+        }
+      },
+      "alternatives": ["entertainment.live_folk_fusion_band"],
+      "tags": ["wedding", "community"]
+    },
+    {
+      "catalogKey": "logistics.airport_fleet_transfer",
+      "name": "Udaipur Airport / Station Guest Transfers",
+      "category": "logistics",
+      "unit": "per vehicle per day",
+      "tiers": {
+        "save": {
+          "name": "Standard Sedans (Dzire / Etios)",
+          "priceMinor": 350000,
+          "description": "Air-conditioned 4-seater with chauffeur for local pickup"
+        },
+        "standard": {
+          "name": "Premium MPV (Innova Crysta)",
+          "priceMinor": 650000,
+          "description": "Spacious 7-seater with luggage rack, bottled water and mints"
+        },
+        "splurge": {
+          "name": "Luxury Executive Van (Toyota Vellfire / Merc)",
+          "priceMinor": 2200000,
+          "description": "Reclining captain seats, Wi-Fi, suited chauffeur"
+        }
+      },
+      "alternatives": ["logistics.guest_coach_bus"],
+      "tags": ["wedding", "transport"]
+    },
+    {
+      "catalogKey": "logistics.guest_coach_bus",
+      "name": "Air-Conditioned Group Coach",
+      "category": "logistics",
+      "unit": "per bus per day",
+      "tiers": {
+        "save": {
+          "name": "25-Seater Mini Bus",
+          "priceMinor": 900000,
+          "description": "AC mini bus for hotel to venue shuttle"
+        },
+        "standard": {
+          "name": "40-Seater Luxury Coach",
+          "priceMinor": 1600000,
+          "description": "Pushback seats, microphone for coordinator, luggage bay"
+        },
+        "splurge": {
+          "name": "Volvo Multi-Axle Luxury Bus",
+          "priceMinor": 3200000,
+          "description": "Ultra smooth air-suspension, USB charging per seat, steward"
+        }
+      },
+      "alternatives": ["logistics.airport_fleet_transfer"],
+      "tags": ["wedding", "community"]
+    },
+    {
+      "catalogKey": "logistics.diesel_generator_backup",
+      "name": "Silent Diesel Generator Power Backup",
+      "category": "logistics",
+      "unit": "per 12-hour shift",
+      "tiers": {
+        "save": {
+          "name": "62.5 kVA Silent DG Set",
+          "priceMinor": 1200000,
+          "description": "Adequate for basic lights, mics and 2 catering warmers (fuel extra)"
+        },
+        "standard": {
+          "name": "125 kVA Silent DG Set with Auto-Mains",
+          "priceMinor": 2200000,
+          "description": "Powers line array, AC green rooms and catering ovens without flicker"
+        },
+        "splurge": {
+          "name": "Dual 250 kVA Synced Generators",
+          "priceMinor": 4800000,
+          "description": "N+1 redundancy setup for continuous live television or heavy production"
+        }
+      },
+      "alternatives": ["logistics.event_security_crew"],
+      "tags": ["wedding", "community"]
+    },
+    {
+      "catalogKey": "logistics.event_security_crew",
+      "name": "Event Security, Valet & Crowd Stewards",
+      "category": "logistics",
+      "unit": "per 10 guards per shift",
+      "tiers": {
+        "save": {
+          "name": "Basic Uniformed Guards",
+          "priceMinor": 1200000,
+          "description": "Gate access control and perimeter patrol"
+        },
+        "standard": {
+          "name": "Trained Bouncers & Valet Drivers",
+          "priceMinor": 2800000,
+          "description": "5 bouncers + 5 valet drivers with parking tags and key desk"
+        },
+        "splurge": {
+          "name": "VIP Protocol & Armed Escort Team",
+          "priceMinor": 6500000,
+          "description": "Suit-clad hospitality bouncers, metal detector arches, radio comms"
+        }
+      },
+      "alternatives": ["logistics.diesel_generator_backup"],
+      "tags": ["wedding", "birthday", "community"]
+    },
+    {
+      "catalogKey": "attire.bridal_couture_lehenga",
+      "name": "Bridal Lehenga / Ceremony Couture",
+      "category": "attire",
+      "unit": "per outfit",
+      "tiers": {
+        "save": {
+          "name": "Designer Rental / Boutiques",
+          "priceMinor": 2500000,
+          "description": "High-end designer replica or rental with dry cleaning and fitting"
+        },
+        "standard": {
+          "name": "Custom Handcrafted Zardozi Lehenga",
+          "priceMinor": 8500000,
+          "description": "Raw silk, genuine dabka hand embroidery, custom blouse stitching"
+        },
+        "splurge": {
+          "name": "Master Couturier Signature Ensemble",
+          "priceMinor": 35000000,
+          "description": "Sabyasachi / Tarun Tahiliani couture with personalized veil and styling"
+        }
+      },
+      "alternatives": ["attire.groom_royal_sherwani"],
+      "tags": ["wedding"]
+    },
+    {
+      "catalogKey": "attire.groom_royal_sherwani",
+      "name": "Groom Royal Mewari Sherwani",
+      "category": "attire",
+      "unit": "per outfit",
+      "tiers": {
+        "save": {
+          "name": "Semi-Tailored Indo-Western Suit",
+          "priceMinor": 1500000,
+          "description": "Jacquard fabric sherwani jacket, churidar and readymade safa"
+        },
+        "standard": {
+          "name": "Hand-Embroidered Raw Silk Sherwani",
+          "priceMinor": 4500000,
+          "description": "Pure silk, hand zardozi work, custom tied Kota doria safa, stole and mojris"
+        },
+        "splurge": {
+          "name": "Royal Bespoke Sherwani with Real Pearls",
+          "priceMinor": 18000000,
+          "description": "Couturier made with royal brooch, antique sword and pure pashmina shawl"
+        }
+      },
+      "alternatives": ["attire.bridal_couture_lehenga"],
+      "tags": ["wedding"]
+    },
+    {
+      "catalogKey": "attire.bridal_hair_makeup_artist",
+      "name": "Bridal Hair & Makeup Artist (MUA)",
+      "category": "attire",
+      "unit": "per event",
+      "tiers": {
+        "save": {
+          "name": "Senior Salon Artist",
+          "priceMinor": 1200000,
+          "description": "HD makeup with lashes, hairstyling and basic saree/dupatta draping"
+        },
+        "standard": {
+          "name": "Top Bridal Specialist MUA",
+          "priceMinor": 3000000,
+          "description": "Airbrush makeup, luxury skincare prep, floral hair art, draping"
+        },
+        "splurge": {
+          "name": "Celebrity Destination MUA + Team",
+          "priceMinor": 8500000,
+          "description": "Airfare + stay for celebrity artist, includes touchups throughout ceremonies"
+        }
+      },
+      "alternatives": ["attire.family_styling_safas"],
+      "tags": ["wedding"]
+    },
+    {
+      "catalogKey": "attire.family_styling_safas",
+      "name": "Guest Turban / Safa Tying & Stoles",
+      "category": "attire",
+      "unit": "per 50 guests",
+      "tiers": {
+        "save": {
+          "name": "Polyester Bandhani Safas",
+          "priceMinor": 1000000,
+          "description": "Pre-tied or quick-wrap pagris in classic pink and yellow"
+        },
+        "standard": {
+          "name": "Chanderi Handloom Safas & Chanderi Stoles",
+          "priceMinor": 2500000,
+          "description": "On-site master tie specialist wrapping pure Chanderi silk with kalgi brooch"
+        },
+        "splurge": {
+          "name": "Pure Tissue Silk Safas with Heritage Jewels",
+          "priceMinor": 5500000,
+          "description": "Bespoke monogrammed fabrics with semiprecious stone safa pins"
+        }
+      },
+      "alternatives": ["attire.bridal_hair_makeup_artist"],
+      "tags": ["wedding"]
+    }
+  ]
+}

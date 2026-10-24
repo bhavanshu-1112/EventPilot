@@ -1,0 +1,72 @@
+{
+  "_note": "SAMPLE DATA, not real market prices or formal tax advice. Configurable tax assumptions for Indian event planning.",
+  "gstRates": [
+    {
+      "id": "gst-catering",
+      "name": "Catering GST (standalone)",
+      "rate": 0.05,
+      "appliesTo": ["catering"],
+      "note": "5% GST without Input Tax Credit"
+    },
+    {
+      "id": "gst-hotel-catering",
+      "name": "Hotel / Resort Catering GST",
+      "rate": 0.18,
+      "appliesTo": ["catering", "venue"],
+      "note": "18% GST when hosted in hotels with room tariffs >= ₹7,500/night"
+    },
+    {
+      "id": "gst-venue-rental",
+      "name": "Mandap / Lawn / Hall Rental GST",
+      "rate": 0.18,
+      "appliesTo": ["venue"],
+      "note": "18% SAC 997212 / 998555"
+    },
+    {
+      "id": "gst-decor-production",
+      "name": "Decor, Stage, Lighting Production GST",
+      "rate": 0.18,
+      "appliesTo": ["decor"],
+      "note": "18% Works contract and production services"
+    },
+    {
+      "id": "gst-photography",
+      "name": "Photography & Videography GST",
+      "rate": 0.18,
+      "appliesTo": ["photography"],
+      "note": "18% SAC 998381"
+    },
+    {
+      "id": "gst-entertainment",
+      "name": "DJ, Band, Artists & Sound GST",
+      "rate": 0.18,
+      "appliesTo": ["entertainment"],
+      "note": "18% Performing arts and entertainment SAC 9996"
+    },
+    {
+      "id": "gst-attire-low",
+      "name": "Apparel (Unit value <= ₹1,000)",
+      "rate": 0.05,
+      "appliesTo": ["attire"],
+      "note": "5% concessional rate"
+    },
+    {
+      "id": "gst-attire-standard",
+      "name": "Designer Wear & Rental Attire (> ₹1,000)",
+      "rate": 0.12,
+      "appliesTo": ["attire"],
+      "note": "12% standard apparel"
+    },
+    {
+      "id": "gst-logistics",
+      "name": "Guest Transport & Fleet Logistics GST",
+      "rate": 0.05,
+      "appliesTo": ["logistics"],
+      "note": "5% transport of passengers without ITC, 12% with ITC"
+    }
+  ],
+  "serviceCharge": {
+    "rate": 0.1,
+    "note": "Discretionary 10% hospitality service charge standard across luxury banquet venues."
+  }
+}
