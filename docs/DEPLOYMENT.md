@@ -48,7 +48,7 @@ This guide walks through deploying **EventPilot** to production using **Render**
 If setting up as a standalone Web Service:
 
 - **Environment**: Node
-- **Build Command**: `pnpm install --no-frozen-lockfile && pnpm -r build`
+- **Build Command**: `pnpm install --no-frozen-lockfile && pnpm --filter @eventpilot/api build`
 - **Start Command**: `pnpm --filter @eventpilot/api start`
 - **Health Check Path**: `/healthz`
 - **Environment Variables**:

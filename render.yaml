@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     region: oregon
-    buildCommand: pnpm install --no-frozen-lockfile && pnpm -r build
+    buildCommand: pnpm install --no-frozen-lockfile && pnpm --filter @eventpilot/api build
     startCommand: pnpm --filter @eventpilot/api start
     healthCheckPath: /healthz
     envVars:
