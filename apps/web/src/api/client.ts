@@ -25,6 +25,15 @@ export class ApiError extends Error {
   }
 }
 
+const API_BASE_URL = (import.meta.env.VITE_API_URL ?? '').replace(/\/+$/, '');
+
+export function buildApiUrl(endpoint: string): string {
+  if (endpoint.startsWith('http://') || endpoint.startsWith('https://')) {
+    return endpoint;
+  }
+  return `${API_BASE_URL}${endpoint}`;
+}
+
 async function request<T>(endpoint: string, options: RequestInit = {}, token?: string): Promise<T> {
   const headers = new Headers(options.headers);
   if (token) {
@@ -36,7 +45,7 @@ async function request<T>(endpoint: string, options: RequestInit = {}, token?: s
     headers.set('Content-Type', 'application/json');
   }
 
-  const response = await fetch(endpoint, {
+  const response = await fetch(buildApiUrl(endpoint), {
     ...options,
     headers,
   });
@@ -469,7 +478,9 @@ export const api = {
       onEvent: (event: { type: string; payload: unknown; timestamp: string }) => void,
       onError?: (err: Event) => void,
     ) => {
-      const url = `/api/v1/events/${eventId}/stream?token=${encodeURIComponent(token)}`;
+      const url = buildApiUrl(
+        `/api/v1/events/${eventId}/stream?token=${encodeURIComponent(token)}`,
+      );
       const eventSource = new EventSource(url);
 
       eventSource.onmessage = (e) => {

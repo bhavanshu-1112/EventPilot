@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: eventpilot-api
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: pnpm install --frozen-lockfile && pnpm -r build
+    startCommand: pnpm --filter @eventpilot/api start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        sync: false
+      - key: REDIS_URL
+        value: redis://localhost:6379
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: GEMINI_FALLBACK_MODEL
+        value: gemini-2.5-flash
+      - key: GEMINI_FALLBACK_MODEL_2
+        value: gemini-2.5-flash-lite
+      - key: LLM_MODE
+        value: live
+      - key: CORS_ORIGIN
+        value: '*'
+      - key: NOTIFY_MODE
+        value: dry-run

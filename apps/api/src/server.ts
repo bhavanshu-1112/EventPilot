@@ -26,13 +26,15 @@ export interface BuildAppOptions {
   llmClient?: LlmClient;
 }
 
-/**
- * Build and configure the Fastify application.
- * Separated from listen() for testability.
- */
-export async function buildApp(
-  options: BuildAppOptions | Record<string, string | undefined> = {},
-): Promise<FastifyInstance> {
+function resolveCorsOrigin(originStr: string): boolean | string | string[] {
+  if (originStr === '*') return true;
+  if (originStr.includes(',')) {
+    return originStr.split(',').map((o) => o.trim());
+  }
+  return originStr;
+}
+
+function resolveAppParams(options: BuildAppOptions | Record<string, string | undefined>) {
   const isEnvObject = 'DATABASE_URL' in options;
   const rawEnv = isEnvObject
     ? (options as Record<string, string | undefined>)
@@ -40,6 +42,17 @@ export async function buildApp(
   const dbClient = !isEnvObject ? (options as BuildAppOptions).db : undefined;
   const uploadDir = !isEnvObject ? (options as BuildAppOptions).uploadDir : undefined;
   const customLlm = !isEnvObject ? (options as BuildAppOptions).llmClient : undefined;
+  return { rawEnv, dbClient, uploadDir, customLlm };
+}
+
+/**
+ * Build and configure the Fastify application.
+ * Separated from listen() for testability.
+ */
+export async function buildApp(
+  options: BuildAppOptions | Record<string, string | undefined> = {},
+): Promise<FastifyInstance> {
+  const { rawEnv, dbClient, uploadDir, customLlm } = resolveAppParams(options);
   const env = parseEnv(rawEnv);
 
   const app = Fastify({
@@ -79,7 +92,7 @@ export async function buildApp(
   });
 
   await app.register(cors, {
-    origin: env.CORS_ORIGIN,
+    origin: resolveCorsOrigin(env.CORS_ORIGIN),
     credentials: true,
   });
 
